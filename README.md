@@ -1,9 +1,9 @@
 # 🕹 끝말잇기 게임
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/260bb065-e8bd-4631-b586-358d776511d3"  width="200" height="400"/>
-  <img src="https://github.com/user-attachments/assets/bb80349a-f43f-429b-b5fc-7da647f0f8f2"  width="200" height="400"/>
-  <img src="https://github.com/user-attachments/assets/c3bb5e4b-7795-4cec-94de-ec6210c98f1c"  width="200" height="400"/>
+  <img src="https://github.com/user-attachments/assets/c3bb5e4b-7795-4cec-94de-ec6210c98f1c"  height="400"/>
+  <img src="https://github.com/user-attachments/assets/bb80349a-f43f-429b-b5fc-7da647f0f8f2"  height="400"/>
+  <img src="https://github.com/user-attachments/assets/260bb065-e8bd-4631-b586-358d776511d3"  height="400"/>
 </p>
 
 ## 설정
