@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[10팀] 끝말잇기 게임</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="sec-top">
+            <div>
+                <p class="h-title">끝말<br />잇기</p>
+            </div>
+        </div>
+        <div class="sec-main">
+            <div class="page min-page first-page">
+                <h2>끝말<br />잇기</h2>
+                <div class="rules">
+                    <p>규칙</p>
+                    <p class="line"></p>
+                    <p>처음 시작 시 3개의 목숨을 가집니다.</p>
+                    <p>제한시간 10초 안에 알맞은 단어를 입력해야합니다.</p>
+                    <p>알맞은 단어를 입력하면 40점을 받습니다.</p>
+                    <p>이미 나온 단어를 입력하면 -10점을 받습니다.</p>
+                    <p>시간 초과시 -20점을 받습니다.</p>
+                    <p>
+                        틀리거나 사전에 없는 단어를 입력하면 -30점을
+                        받습니다.
+                    </p>
+                    <p>감점을 받는 경우 목숨이 하나씩 차감됩니다.</p>
+                    <p>목숨을 모두 잃는 경우 게임이 종료됩니다.</p>
+                </div>
+                <button class="wide-btn start-btn">게임<br />시작</button>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sec-main hide">
+            <div class="page second-page">
+                <dir class="help-btn">
+                    <span class="material-symbols-outlined"> replay </span>
+                    <span>다시하기</span>
+                </dir>
+                <div class="now-score">
+                    <span>현재 점수 : <span class="score">0</span>점</span>
+                    <div class="life-count">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="full-bar"></div>
+                        <div class="loss-bar"></div>
+                        <span class="progress-count">10초</span>
+                    </div>
+                </div>
+
+                <div class="current-word">
+                    <p>현재 단어</p>
+                    <p class="word">불러오는 중...</p>
+                </div>
+                <form id="input-form">
+                    <p id="correct-message"></p>
+                    <input type="text" name="input-word" id="input-word" placeholder="단어를 입력하세요" />
+                    <button class="confirm-btn">끝말<br />잇기</button>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sec-main hide">
+            <div class="page min-page third-page">
+                <h2>게임<br />종료</h2>
+                <div class="final-score">
+                    <p>최고 점수</p>
+                    <p class="line"></p>
+                    <p><span class="best-score"></span>점</p>
+                    <p>점수</p>
+                    <p class="line"></p>
+                    <p><span class="cur-score"></span>점</p>
+                </div>
+                <button class="wide-btn restart-btn">다시<br />하기</button>
+            </div>
+        </div>
+        <div class="sec-bottom">
+            <p class="info">
+                [10팀] 강민구 김주리 박덕인 신아진 장원석
+                <br />국립국어원에서 제공하는 표준국어대사전 오픈 API를
+                사용합니다.
+            </p>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>

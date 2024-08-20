@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Pretendard-Regular";
+    font-size: 15px;
+    color: #353535;
+
+    user-select: none;
+}
+button {
+    font-family: "EBSHunminjeongeumSBA";
+    border: transparent;
+    border-radius: 1000px;
+    background-color: #60a5ff;
+    color: #ffffff;
+}
+button:hover {
+    background-color: #518ddb;
+}
+button:active {
+    background-color: #3579d2;
+}
+
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 숨김 */
+.hide {
+    display: none;
+}
+
+/* ------------------- 상단 영역 ------------------- */
+.sec-top {
+    background-color: #353535;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    padding: 0px 50px;
+}
+.sec-top > div {
+    position: relative;
+    width: 1000px;
+}
+.h-title {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #ffffff;
+
+    /* text-align: center;
+    border: 3px solid #FFFFFF; */
+}
+.h-title:nth-of-type(1) {
+    font-family: "EBSHunminjeongeumSBA";
+}
+.h-title:nth-of-type(2) {
+    font-family: "EBSHunminjeongeumSBA";
+}
+/* ------------------- 상단 영역 끝 ------------------- */
+
+/* ------------------- 메인 영역 ------------------- */
+.sec-main {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 700px;
+    width: 1000px;
+
+    padding: 50px 0;
+}
+.sec-main > div {
+    height: 100%;
+    width: 100%;
+
+    box-shadow: 0px 0px 7px #d4d4d4;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+/* 첫 페이지 */
+/* .first-page { */
+.min-page {
+    padding: 60px;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .first-page > h2 { */
+.min-page > h2 {
+    font-family: "EBSHunminjeongeumSBA";
+    font-size: 3rem;
+    text-align: center;
+
+    /* height: 110px;
+    width: 110px;
+    border: 6px solid #353535;
+    border-radius: 5px; */
+}
+.rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line {
+    background-color: #35353530;
+    width: 300px;
+    height: 2px;
+    border-radius: 1000px;
+}
+.rules > p:nth-of-type(1) {
+    font-family: "EBSHunminjeongeumSBA";
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.rules > p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wide-btn {
+    width: 500px;
+    height: 50px;
+}
+
+/* 둘째 페이지*/
+.second-page {
+    padding: 60px;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.help-btn:hover span:nth-of-type(2) {
+    text-decoration: underline;
+}
+
+.now-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score {
+    color: #60a5ff;
+    font-weight: bold;
+}
+
+.life-count {
+    margin: 20px 0;
+}
+.life-count > * {
+    color: #ff4141;
+}
+
+.progress-bar {
+    position: relative;
+    height: 25px;
+    width: 500px;
+}
+.progress-bar > * {
+    position: absolute;
+}
+.full-bar {
+    background-color: #35353515;
+    height: 100%;
+    width: 100%;
+    border-radius: 1000px;
+}
+.loss-bar {
+    background-color: #ffcf60;
+    height: 100%;
+    width: 100%;
+    border-radius: 1000px;
+}
+.progress-count {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.current-word {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+.word {
+    font-family: "EBSHunminjeongeumSBA";
+    font-weight: bold;
+    font-size: 3rem;
+    color: #60a5ff;
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+#input-form > #correct-message {
+    position: absolute;
+    left: 20px;
+    top: -25px;
+}
+
+#input-word {
+    width: 500px;
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: 1px solid #35353550;
+    border-radius: 8px;
+}
+#input-word::placeholder {
+    color: #35353550;
+}
+
+.confirm-btn {
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+/* 셋째 페이지 */
+.final-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.final-score .line {
+    background-color: #35353530;
+    width: 100px;
+    height: 2px;
+    border-radius: 1000px;
+}
+.final-score > p:nth-of-type(1) {
+    font-family: "EBSHunminjeongeumSBA";
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.final-score > p:nth-of-type(3) {
+    margin-bottom: 50px;
+}
+.final-score > p:nth-of-type(4) {
+    font-family: "EBSHunminjeongeumSBA";
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.final-score > p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.best-score,
+.cur-score {
+    color: #60a5ff;
+}
+
+/* ------------------- 메인 영역 끝 ------------------- */
+
+.sec-bottom {
+    height: 150px;
+    width: 100%;
+
+    padding-bottom: 20px;
+
+    bottom: 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.info {
+    font-size: 0.8rem;
+    line-height: 25px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .sec-top > div {
+        width: 100%;
+    }
+    .sec-main {
+        width: 100%;
+        padding: 50px 50px;
+    }
+    .min-page {
+        padding: 60px 20px;
+    }
+    .wide-btn {
+        width: 80%;
+    }
+
+    .progress-bar {
+        width: 300px;
+    }
+    #input-word {
+        width: 300px;
+    }
+    .confirm-btn {
+        width: 300px;
+    }
+}
+
+.show-wrong-animation {
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    color: #ff4141;
+}
+.show-correct-animation {
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    color: #60a5ff;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.timer-animation {
+    animation: timer 10s linear;
+    /* animation-name: timer; */
+    /* animation-duration: 10s; */
+}
+@keyframes timer {
+    0% {
+        /* transform: scaleX(100%); */
+        width: 100%;
+    }
+    100% {
+        /* transform: scaleX(0%); */
+        width: 10%;
+    }
+}
+
+@font-face {
+    font-family: "EBSHunminjeongeumSBA";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSHunminjeongeum.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
